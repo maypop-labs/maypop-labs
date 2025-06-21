@@ -1,0 +1,34 @@
+name: "Request Preview Access"
+description: Join the closed-preview volunteer cohort
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest! Please keep it short & sweet—this is just triage.
+  - type: textarea
+    id: bio
+    attributes:
+      label: Brief bio & background
+      placeholder: "2-3 sentences"
+    validations:
+      required: true
+  - type: input
+    id: links
+    attributes:
+      label: Links (GitHub, ORCID, LinkedIn, etc.)
+      placeholder: "https://github.com/username"
+  - type: textarea
+    id: interests
+    attributes:
+      label: What part of the project excites you?
+      placeholder: "e.g. Boolean attractor optimisation, scRNA-seq QC…"
+    validations:
+      required: true
+  - type: textarea
+    id: availability
+    attributes:
+      label: Estimated weekly availability
+      placeholder: "~1-2 h / week"
+    validations:
+      required: true
