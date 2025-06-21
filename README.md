@@ -1,6 +1,6 @@
 # Maypop Labs
 
-*Community-driven rejuvenation target discovery for humans & pets.*
+*Community-driven rejuvenation target discovery for humans and pets.*
 
 This public repository hosts our:
 
