@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN (for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-100 bg-gray-900">
+  <!-- slim preview banner -->
+  <div class="w-full text-center text-xs py-1 bg-gray-800 text-gray-300">Preview&nbsp;version 0 • Seeking feedback</div>
+
+  <!-- sticky navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur supports-backdrop-blur:bg-gray-900/40">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between text-sm">
+      <a href="#hero" class="font-bold text-white tracking-wide">Maypop Labs</a>
+      <nav class="hidden md:flex items-center gap-6 text-gray-200">
+        <a href="#mission" class="hover:text-white">Mission</a>
+        <a href="#workflow" class="hover:text-white">Workflow</a>
+        <a href="#get-involved" class="hover:text-white">Get&nbsp;Involved</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="h-20"></div><!-- spacer (header + banner) -->
+
+  <!-- Hero -->
+  <section id="hero" class="relative flex flex-col items-center justify-center h-[60vh] sm:h-[70vh] lg:h-screen px-6 text-center text-white bg-gradient-to-br from-[#0a0f43] via-[#28146e] to-[#5d0c8b]">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">Open Drug Discovery for Healthy Longevity</h1>
+    <p class="max-w-xl mx-auto text-lg md:text-xl opacity-90 mb-8">Maypop Labs is a volunteer‑driven nonprofit combining multi‑omics, open science, and community governance to uncover rejuvenation targets for humans & pets.</p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#preview" class="px-8 py-3 rounded-lg bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition">Request Preview Access</a>
+      <a href="#workflow" class="px-8 py-3 rounded-lg border border-white/70 font-semibold hover:bg-white/10 transition">View the Workflow</a>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Our Mission</h2>
+    <p class="text-gray-300 leading-relaxed text-lg">We accelerate affordable, transparent drug discovery by crowdsourcing data, code, and expertise. Our primary focus is on aging and companion‑animal health, but every step we take builds a reusable, open protocol other disease communities can adopt. <span class="block mt-4">Maypop Labs is currently onboarding a small pilot cohort—public repo coming once the test run is stable.</span></p>
+  </section>
+
+  <!-- Workflow -->
+  <section id="workflow" class="bg-gray-800/60 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-center">Our Open Workflow</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-gray-200">
+        <div><h3 class="text-xl font-semibold mb-2">1. Multi‑omics Data</h3><p>We ingest public & donated scRNA‑seq, proteomics, and metabolomics sets.</p></div>
+        <div><h3 class="text-xl font-semibold mb-2">2. Boolean‑Network Modeling</h3><p>Dynamic GRNs reveal attractor landscapes and rejuvenation switches.</p></div>
+        <div><h3 class="text-xl font-semibold mb-2">3. In Silico Perturbations</h3><p>Systematic simulations rank single & dual‑gene interventions.</p></div>
+        <div><h3 class="text-xl font-semibold mb-2">4. Community Review</h3><p>Volunteers validate targets, propose datasets, and refine models in GitHub.</p></div>
+        <div><h3 class="text-xl font-semibold mb-2">5. Wet‑Lab Validation</h3><p>External partners test top candidates in cell & organoid assays.</p></div>
+        <div><h3 class="text-xl font-semibold mb-2">6. Open‑Access Reports</h3><p>Results, code, and protocols are released under Apache 2.0 & CC‑BY.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section id="get-involved" class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center">Ways to Contribute</h2>
+    <ul class="space-y-6 text-gray-300">
+      <li><strong>Early Preview Volunteers (≤1 hr / wk):</strong> Help us sanity‑check docs & run the toy dataset.</li>
+      <li><strong>Bioinformatics & ML:</strong> Expand the Boolean‑attractor pipeline.</li>
+      <li><strong>Wet‑Lab Collabs:</strong> Share scRNA‑seq data or test predicted targets.</li>
+      <li><strong>Documentation & Outreach:</strong> Improve tutorials, translate, or spread the word.</li>
+      <li><strong>Donations:</strong> Support cloud compute or small‑grant bounties for volunteers.</li>
+    </ul>
+  </section>
+
+  <!-- Preview Access anchor (simple explanation) -->
+  <section id="preview" class="bg-gray-800/60 py-16">
+    <div class="max-w-xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Request Preview Access</h2>
+      <p class="mb-6 text-gray-300">We’re vetting a small pilot cohort to keep mentor bandwidth high. If you’re up for a light weekly check‑in and can run R / Python locally, we’d love to hear from you.</p>
+      <a href="mailto:hello@maypoplabs.org?subject=Preview%20volunteer" class="inline-block px-8 py-3 rounded-lg bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition">Email&nbsp;Us</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Stay in Touch</h2>
+      <p class="mb-6 text-gray-300">Questions, ideas, or dataset offers? Email us at <a href="mailto:hello@maypoplabs.org" class="text-white underline">hello@maypoplabs.org</a> or open an issue on GitHub.</p>
+      <a href="https://github.com/maypop-labs" target="_blank" rel="noopener" class="inline-block px-8 py-3 rounded-lg bg-white/90 text-gray-900 font-semibold hover:bg-white transition">GitHub Repository</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-xs text-gray-500 bg-gray-900/80">© 2025 Maypop Labs • Apache 2.0 code • CC‑BY content</footer>
+</body>
+</html>
