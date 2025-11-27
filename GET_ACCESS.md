@@ -38,14 +38,10 @@ If you can spare ~1 hour / week for 4-6 weeks, here’s the process:
    - Match volunteers to small tasks  
    - Clarify timelines & expectations
 
-After the pilot stabilises, we’ll merge everything back to this public repo.
-
 ---
 
 ### **FAQ**
 
 **Q — Is there funding or is this purely volunteer?**  
-Right now it’s passion-driven. Small cloud-credit stipends are planned.
+Right now it’s passion-driven.
 
-**Q — Can I share results publicly?**  
-Please keep code/data private until we flip the main repo public.
